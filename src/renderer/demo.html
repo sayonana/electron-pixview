@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>布局测试</title>
+    <style type="text/css">
+        img {
+            margin: 0;
+            padding: 0;
+            max-height: 100px;
+
+        }
+
+        .box {
+            margin: 1rem;
+            padding: 0;
+            width: 100px;
+            height: 100px;
+            float: left;
+        }
+
+        /* .bg {
+            width: 100%;
+            height: 600px;
+            position: relative;
+            background: url("/Users/zhoujw/test/____TaKaYa2018-11-19-08-19-02-2.jpg") no-repeat fixed;
+            padding: 0px;
+            box-sizing: border-box;
+            z-index: 1;
+            size: 100%
+        }
+
+        .bg:after {
+            content: "";
+            width: 100%;
+            height: 600px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: inherit;
+            filter: blur(20px);
+            z-index: 2;
+        } */
+
+        /* .drag {
+            margin: 100px auto;
+            width: 200px;
+            height: 200px;
+            background: inherit;
+            position: relative;
+        }
+
+
+        .drag:after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: inherit;
+            filter: blur(15px);
+            z-index: 2;
+        } */
+    </style>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+    <!-- <script type="text/javascript" defer=true>
+        
+        console.log(document.getElementsByClassName('ccc'));
+        var canvas = document.getElementsByTagName('canvas')[0];
+        console.log(canvas);
+
+        canvas.getContext('2d');
+        let img = new Image();
+        img.src = ('/Users/zhoujw/Pictures/python/_konkito2019-04-27-02-19-49-0.jpg');
+        canvas.drawImage(img,0,0);
+        // console.log($("#root"));
+        // for (var i = 0; i < 20; i++) {
+        //     console.log('aa');
+        // }
+    </script> -->
+</head>
+
+<body>
+    <div id='root'>
+        <canvas class = 'canvas'></canvas>
+        <img src="./_konkito2019-04-27-02-19-49-0.jpg"/>
+    </div>
+
+    <script type="text/javascript" defer=true>
+        
+        var canvas = document.getElementsByTagName('canvas')[0];
+        console.log(canvas);
+
+        var ctx = canvas.getContext('2d');
+        console.log(ctx);
+        let img = new Image();
+        img.src = '/Users/zhoujw/Pictures/python/_konkito2019-04-27-02-19-49-0.jpg';
+    </script>
+</body>
+
+</html>
